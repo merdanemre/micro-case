@@ -1,0 +1,42 @@
+   .page{
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    
+    background: #F2F2F2;
+   }
+   
+  .card{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+  
+  
+  .input-class{
+      position: absolute;
+      left: 0%;
+      right: 0%;
+      top: 32.35%;
+      bottom: 0%;
+
+      background: #E5E5E5;
+      border: 1px solid #CCCCCC;
+      box-sizing: border-box;
+      border-radius: 8px;
+  }
+   .form-class {
+    height: min-content;
+    width: auto;
+    max-width: max-content;
+    padding: 15px;
+    margin: auto;
+  }
+  
+ 

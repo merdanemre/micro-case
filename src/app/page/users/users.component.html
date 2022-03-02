@@ -1,0 +1,73 @@
+<div class="card-body text-center">
+    <img class="mb-4" src="../../../assets/img/logo.png" >
+</div>
+
+
+    <div class="row col-12">
+        <div class="col-4" style="border: 1cm;">
+            <h3>Kullanıcı Listesi</h3>
+          <div class="row" *ngFor="let user of users" (click)="getUser(user.id)">
+            <div class="col-2">
+               <div>
+              <img class="img-detail" src={{user.picture}}  style="width:100px">&nbsp;
+            </div>
+            </div>
+           <div class="col-10">
+            <div class="label-detail">             
+              <label>{{user.title}}</label>&nbsp;
+              <label>{{user.firstName}}</label>&nbsp;
+              <label>{{user.lastName}}</label><br>              
+            </div>  
+            <div>
+              <label class="fa fa-envelope"> Email: {{user.firstName}}.{{user.lastName}}@example.com </label>&nbsp;
+            </div>
+            <div>
+              <label class="fa fa-mobile"> Phone: 92694011  </label>&nbsp;
+            </div>
+           </div>
+          </div>
+          <a (click)="loadUser()" class="btn btn-link ">Daha fazla yükle</a> <br>
+        </div>        
+        <div class="col-8">
+            <div class="flex-grow"><div class="truncate">
+              <b>ID:</b> 60d0fe4f5311236168a109ca
+            </div>
+              <img src="https://randomuser.me/api/portraits/women/58.jpg">
+            </div>
+            <div class="flex-grow">
+              <div class="font-semibold text-lg truncate">
+                ms. Sara Andersen</div>
+              <div class="truncate">
+                <b>Gender:</b> female
+              </div>
+              <div class="truncate">
+                <b>Date of birth:</b> Apr 30 1996
+              </div>
+              <div class="truncate">
+                <b>Register date:</b> Jun 22 2021</div>
+                <br><div class="truncate">
+                  <b>Email:</b> sara.andersen@example.com
+                </div>
+                <div class="truncate">
+                  <b>Phone:</b> 92694011
+                </div>
+              </div>
+              <div class="flex-grow">
+                <b>Address</b>
+                <div class="truncate">
+                  <b>State:</b> Nordjylland
+                </div>
+                <div class="truncate">
+                  <b>Street:</b> 9614, SÃ¸ndermarksvej
+                </div><div class="truncate">
+                  <b>City:</b> Kongsvinger
+                </div>
+                <div class="truncate">
+                  <b>Country:</b> Denmark
+                </div>
+                <div class="truncate">
+                  <b>Timezone:</b> -9:00
+                </div>
+              </div>
+            </div>
+      </div>

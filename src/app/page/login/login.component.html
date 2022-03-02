@@ -1,0 +1,25 @@
+
+
+
+    <form class="form-class card" #loginForm="ngForm" (ngSubmit)="login()">
+     <div class="text-center">
+      <img class="mb-4" src="../../../assets/img/logo.png" >
+      <h3 >Google Maps’e Hosgeldiniz.</h3>
+     </div>
+     <div class="form-group">
+      <label clas="label-calss"  style="position: sticky;"  for="mail">E-Mail</label>
+      <input type="text" name="mail" [(ngModel)]="loginUser.mail" required type="text" class="form-control" placeholder="E-mail adresinizi giriniz" />
+  </div>
+  <div class="form-group">
+      <label for="password">Şifre</label>
+      <input type="password" name="password" [(ngModel)]="loginUser.password" required type="password" class="form-control" placeholder="******" />
+  </div>
+  <div class="form-group">
+    <a (click)="goRegister()" class="btn btn-link pull-right">Şifremi Unuttum</a> <br>
+  </div>
+  <div class="form-group d-grid gap-2">
+      <button type="submit" class="btn btn-primary">
+        Giriş Yap
+      </button>              
+  </div>
+    </form>
